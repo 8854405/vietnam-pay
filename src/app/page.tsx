@@ -1,0 +1,106 @@
+export default function Home() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="hero">
+        <div className="container">
+          <h1>越南支付 — 专业越南跨境支付解决方案</h1>
+          <p>
+            为出海企业提供安全、快捷、合规的越南支付服务。覆盖越南本地支付、跨境汇款、代收代付等全场景，
+            一站式解决您的越南支付需求。
+          </p>
+          <a href="/contact" className="btn">立即咨询</a>{' '}
+          <a href="/services" className="btn btn-outline">了解服务</a>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="section">
+        <div className="container">
+          <div className="stats">
+            <div><div className="stat-num">5+</div><div className="stat-label">年行业经验</div></div>
+            <div><div className="stat-num">1000+</div><div className="stat-label">服务客户</div></div>
+            <div><div className="stat-num">99.9%</div><div className="stat-label">系统稳定率</div></div>
+            <div><div className="stat-num">T+0</div><div className="stat-label">实时到账</div></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="section section-alt">
+        <div className="container">
+          <h2 className="section-title">越南支付核心服务</h2>
+          <p className="section-desc">我们提供全方位的越南支付解决方案，满足不同业务场景的支付需求</p>
+          <div className="grid-3">
+            <div className="card">
+              <div className="card-icon">💳</div>
+              <h3>越南本地支付</h3>
+              <p>支持越南主流支付方式，包括银行转账、电子钱包（MoMo、ZaloPay、VNPay）、QR码支付等，覆盖越南消费者的日常支付习惯。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">🌏</div>
+              <h3>跨境汇款</h3>
+              <p>提供中国到越南、越南到中国的双向跨境汇款服务，汇率透明，费用低廉，资金安全有保障。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">🏦</div>
+              <h3>代收代付</h3>
+              <p>为电商平台、游戏公司、跨境贸易企业提供越南本地代收代付服务，合规运营，高效结算。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why choose us */}
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">为什么选择我们的越南支付服务</h2>
+          <p className="section-desc">深耕越南支付领域多年，我们具备独特的行业优势</p>
+          <div className="grid-3">
+            <div className="card">
+              <div className="card-icon">🔒</div>
+              <h3>安全合规</h3>
+              <p>严格遵守越南及中国的金融监管要求，确保每一笔越南支付交易合法合规，资金安全有保障。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">⚡</div>
+              <h3>极速到账</h3>
+              <p>越南支付交易实时处理，支持T+0到账，让您的资金流转更加高效。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">💰</div>
+              <h3>费率优惠</h3>
+              <p>具有竞争力的越南支付费率，透明无隐藏收费，帮助企业降低跨境支付成本。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">🛠</div>
+              <h3>技术对接简单</h3>
+              <p>提供完善的API接口文档，快速接入越南支付系统，最快1天完成技术对接。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">🌐</div>
+              <h3>多渠道覆盖</h3>
+              <p>整合越南市场上所有主流支付渠道，一次对接即可使用全部越南支付方式。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">📞</div>
+              <h3>专属客服</h3>
+              <p>7×24小时中越双语客服支持，及时解答您在越南支付过程中遇到的所有问题。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="cta">
+        <div className="container">
+          <h2>开始使用越南支付服务</h2>
+          <p>无论您是电商出海、游戏发行还是跨境贸易，我们都能为您提供最合适的越南支付方案</p>
+          <a href="https://t.me/zfxt5" className="btn" target="_blank" rel="noopener noreferrer">
+            Telegram 咨询: @zfxt5
+          </a>
+        </div>
+      </section>
+    </>
+  )
+}

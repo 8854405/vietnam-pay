@@ -1,9 +1,37 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '越南支付服务',
-  description: '越南支付服务详情：越南本地支付、跨境汇款、代收代付、电商支付、游戏支付等全场景越南支付解决方案。',
+  title: '越南支付服务 - 本地支付·跨境汇款·代收代付',
+  description: 'VietnamPay越南支付服务详情：越南本地支付、跨境汇款、代收代付、电商支付、游戏支付等全场景越南支付解决方案，一次对接覆盖全渠道。',
   alternates: { canonical: '/services' },
+  openGraph: {
+    title: '越南支付服务 - 本地支付·跨境汇款·代收代付 | VietnamPay',
+    description: 'VietnamPay提供越南本地支付、跨境汇款、代收代付、电商支付等全场景越南支付解决方案。',
+    url: 'https://vietnampay.net/services',
+    type: 'website',
+    siteName: 'VietnamPay',
+    images: [{ url: '/images/og-cover.jpg', width: 1200, height: 630, alt: 'VietnamPay - 越南支付服务' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '越南支付服务 - 本地支付·跨境汇款·代收代付 | VietnamPay',
+    description: 'VietnamPay提供越南本地支付、跨境汇款、代收代付等全场景越南支付解决方案。',
+    images: ['/images/og-cover.jpg'],
+  },
+}
+
+function ServiceJsonLd() {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'VietnamPay越南支付服务',
+    provider: { '@type': 'Organization', name: 'VietnamPay', url: 'https://vietnampay.net' },
+    description: '越南本地支付、跨境汇款、代收代付、电商支付、游戏支付等全场景越南支付解决方案',
+    areaServed: { '@type': 'Country', name: 'Vietnam' },
+    serviceType: '跨境支付',
+    url: 'https://vietnampay.net/services',
+  }
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }
 
 const services = [
@@ -18,9 +46,10 @@ const services = [
 export default function Services() {
   return (
     <>
+      <ServiceJsonLd />
       <section className="page-header">
         <div className="container">
-          <h1>越南支付服务</h1>
+          <h1>越南支付服务 — 全场景支付解决方案</h1>
           <p>全方位越南支付解决方案，满足不同业务场景需求</p>
         </div>
       </section>

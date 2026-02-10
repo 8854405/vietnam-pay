@@ -2,19 +2,50 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: '越南支付方式全攻略 — 2024年最新指南',
-  description: '全面解析越南支付方式：银行转账、电子钱包MoMo、ZaloPay、VNPay等，跨境支付政策与实操指南。帮助企业快速了解越南支付生态。',
+  description: '全面解析越南支付方式：银行转账、电子钱包MoMo、ZaloPay、VNPay等，跨境支付政策与实操指南。帮助企业快速了解越南支付生态，选择合适的支付渠道。',
   alternates: { canonical: '/blog/vietnam-payment-guide' },
+  openGraph: {
+    title: '越南支付方式全攻略 — 2024年最新指南 | VietnamPay',
+    description: '全面解析越南支付方式、政策法规与实操指南，帮助企业快速了解越南支付生态。',
+    url: 'https://vietnampay.net/blog/vietnam-payment-guide',
+    type: 'article',
+    siteName: 'VietnamPay',
+    images: [{ url: '/images/og-cover.jpg', width: 1200, height: 630, alt: '越南支付方式全攻略' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '越南支付方式全攻略 — 2024年最新指南 | VietnamPay',
+    description: '全面解析越南支付方式、政策法规与实操指南。',
+    images: ['/images/og-cover.jpg'],
+  },
+}
+
+function ArticleJsonLd() {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '越南支付方式全攻略 — 2024年最新指南',
+    description: '全面解析越南支付方式：银行转账、电子钱包MoMo、ZaloPay、VNPay等，跨境支付政策与实操指南。',
+    author: { '@type': 'Organization', name: 'VietnamPay', url: 'https://vietnampay.net' },
+    publisher: { '@type': 'Organization', name: 'VietnamPay', url: 'https://vietnampay.net' },
+    datePublished: '2024-01-01',
+    dateModified: '2024-12-01',
+    mainEntityOfPage: 'https://vietnampay.net/blog/vietnam-payment-guide',
+    url: 'https://vietnampay.net/blog/vietnam-payment-guide',
+  }
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }
 
 export default function VietnamPaymentGuide() {
   return (
     <article className="article">
+      <ArticleJsonLd />
       <div className="breadcrumb">
         <a href="/">首页</a> &gt; <a href="/blog/vietnam-payment-guide">越南支付方式全攻略</a>
       </div>
 
       <h1>越南支付方式全攻略 — 2024年最新指南</h1>
-      <p style={{ color: '#475569', marginBottom: 32 }}>发布时间：2024年 | 阅读时间：约10分钟</p>
+      <p style={{ color: '#475569', marginBottom: 32 }}>发布时间：2024年 | 阅读时间：约10分钟 | 由 <a href="/" style={{ color: '#2563eb' }}>VietnamPay</a> 团队出品</p>
 
       <p>随着越南经济的快速发展和数字化转型加速，越南支付市场正经历着前所未有的变革。对于想要进入越南市场的中国企业来说，了解越南支付生态是至关重要的第一步。本文将全面介绍越南支付的各种方式、政策法规以及实操建议，帮助您快速掌握越南支付的方方面面。</p>
 
@@ -52,7 +83,7 @@ export default function VietnamPaymentGuide() {
       <p>越南对跨境支付有着严格的监管要求，企业在开展越南跨境支付业务时需要特别关注以下几个方面：</p>
       <p><strong>外汇管制：</strong>越南实行外汇管制制度，外汇交易需要通过授权银行进行。企业的跨境资金流动需要有真实的贸易背景，并提供相应的凭证文件。越南盾（VND）是越南的法定货币，境内交易原则上必须使用越南盾结算。</p>
       <p><strong>支付牌照：</strong>在越南从事支付服务需要获得越南国家银行颁发的支付中介服务许可证。外资企业可以通过与持牌机构合作的方式开展越南支付业务。</p>
-      <p><strong>数据合规：</strong>越南于2023年实施了《个人数据保护法令》，对支付数据的收集、存储和跨境传输有明确的规定。企业需要确保在越南支付业务中遵守相关数据保护要求。</p>
+      <p><strong>数据合规：</strong>越南在2023年实施了《个人数据保护法令》，对支付数据的收集、存储和跨境传输有明确的规定。企业需要确保在越南支付业务中遵守相关数据保护要求。</p>
       <p><strong>反洗钱要求：</strong>越南支付机构需要遵守严格的KYC（了解你的客户）和AML（反洗钱）要求，包括客户身份验证、可疑交易报告等。</p>
 
       <h2>四、企业接入越南支付的实操指南</h2>
@@ -91,8 +122,9 @@ export default function VietnamPaymentGuide() {
       <p><strong>加密货币监管明确化：</strong>越南政府正在研究制定加密货币的监管框架，未来可能会为合规的加密货币支付提供法律依据。</p>
 
       <h2>六、总结</h2>
-      <p>越南支付市场正处于快速发展期，机遇与挑战并存。对于想要进入越南市场的企业来说，选择一个专业、可靠的越南支付服务伙伴至关重要。我们拥有多年越南支付行业经验，可以为您提供一站式的越南支付解决方案。</p>
+      <p>越南支付市场正处于快速发展期，机遇与挑战并存。对于想要进入越南市场的企业来说，选择一个专业、可靠的越南支付服务伙伴至关重要。VietnamPay拥有多年越南支付行业经验，可以为您提供一站式的越南支付解决方案。</p>
       <p>如果您对越南支付有任何疑问，或需要了解更多关于越南支付接入的详细信息，欢迎通过 <a href="https://t.me/zfxt5" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb' }}>Telegram: @zfxt5</a> 联系我们的支付顾问。</p>
+      <p style={{ marginTop: 24 }}>相关阅读：<a href="/blog/vietnam-payment-methods" style={{ color: '#2563eb' }}>越南主流支付方式介绍</a> | <a href="/services" style={{ color: '#2563eb' }}>VietnamPay越南支付服务</a></p>
     </article>
   )
 }

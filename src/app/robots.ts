@@ -1,9 +1,8 @@
 import type { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://vietnam-pay.vercel.app'
   return {
     rules: { userAgent: '*', allow: '/' },
-    sitemap: `${base}/sitemap.xml`,
+    sitemap: 'https://vietnampay.net/sitemap.xml',
   }
 }

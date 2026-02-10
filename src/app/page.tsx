@@ -1,3 +1,25 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '越南支付 - 专业越南跨境支付解决方案',
+  description: 'VietnamPay越南支付专业平台，提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。安全快捷，助力企业出海东南亚。',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: '越南支付 - 专业越南跨境支付解决方案 | VietnamPay',
+    description: 'VietnamPay提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。',
+    url: 'https://vietnampay.net',
+    type: 'website',
+    siteName: 'VietnamPay',
+    images: [{ url: '/images/og-cover.jpg', width: 1200, height: 630, alt: 'VietnamPay - 越南支付专业平台' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '越南支付 - 专业越南跨境支付解决方案 | VietnamPay',
+    description: 'VietnamPay提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。',
+    images: ['/images/og-cover.jpg'],
+  },
+}
+
 export default function Home() {
   return (
     <>
@@ -20,7 +42,7 @@ export default function Home() {
           <div className="stats">
             <div><div className="stat-num">5+</div><div className="stat-label">年行业经验</div></div>
             <div><div className="stat-num">1000+</div><div className="stat-label">服务客户</div></div>
-            <div><div className="stat-num">99.9%</div><div className="stat-label">系统稳定率</div></div>
+            <div><div className="stat-num">99.9%</div><div className="stat-label">系统稳定性</div></div>
             <div><div className="stat-num">T+0</div><div className="stat-label">实时到账</div></div>
           </div>
         </div>
@@ -48,13 +70,14 @@ export default function Home() {
               <p>为电商平台、游戏公司、跨境贸易企业提供越南本地代收代付服务，合规运营，高效结算。</p>
             </div>
           </div>
+          <p style={{ textAlign: 'center', marginTop: 32 }}><a href="/services" className="btn">查看全部越南支付服务 →</a></p>
         </div>
       </section>
 
       {/* Why choose us */}
       <section className="section">
         <div className="container">
-          <h2 className="section-title">为什么选择我们的越南支付服务</h2>
+          <h2 className="section-title">为什么选择VietnamPay的越南支付服务</h2>
           <p className="section-desc">深耕越南支付领域多年，我们具备独特的行业优势</p>
           <div className="grid-3">
             <div className="card">
@@ -91,11 +114,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Blog links */}
+      <section className="section section-alt">
+        <div className="container">
+          <h2 className="section-title">越南支付知识中心</h2>
+          <p className="section-desc">深入了解越南支付市场，掌握最新行业动态</p>
+          <div className="grid-3" style={{ maxWidth: 800, margin: '0 auto' }}>
+            <a href="/blog/vietnam-payment-guide" className="card" style={{ textDecoration: 'none' }}>
+              <h3>📖 越南支付方式全攻略</h3>
+              <p>全面解析越南支付方式、政策法规与实操指南</p>
+            </a>
+            <a href="/blog/vietnam-payment-methods" className="card" style={{ textDecoration: 'none' }}>
+              <h3>💡 越南主流支付方式介绍</h3>
+              <p>MoMo、ZaloPay、VNPay等越南主流支付方式详解</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta">
         <div className="container">
           <h2>开始使用越南支付服务</h2>
-          <p>无论您是电商出海、游戏发行还是跨境贸易，我们都能为您提供最合适的越南支付方案</p>
+          <p>无论您是电商出海、游戏发行还是跨境贸易，VietnamPay都能为您提供最合适的越南支付方案</p>
           <a href="https://t.me/zfxt5" className="btn" target="_blank" rel="noopener noreferrer">
             Telegram 咨询: @zfxt5
           </a>

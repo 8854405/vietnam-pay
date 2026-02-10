@@ -10,7 +10,6 @@ export const metadata: Metadata = {
     template: '%s | VietnamPay',
   },
   description: '越南支付专业平台，提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。安全快捷的越南支付服务，助力企业出海东南亚。',
-  keywords: ['越南支付', '越南跨境支付', '越南本地支付', '越南代收代付', '越南汇款', '东南亚支付', 'Vietnam payment', 'VietnamPay'],
   authors: [{ name: 'VietnamPay' }],
   openGraph: {
     type: 'website',

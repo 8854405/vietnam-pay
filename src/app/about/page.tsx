@@ -39,7 +39,7 @@ function AboutJsonLd() {
 export default function About() {
   return (
     <>
-      <head><link rel="canonical" href="https://vietnampay.net/about" /></head>
+      <head><link rel="canonical" href="https://vietnampay.net/about/" /></head>
       <AboutJsonLd />
       <section className="page-header">
         <div className="container">

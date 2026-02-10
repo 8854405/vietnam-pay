@@ -45,7 +45,7 @@ const services = [
 export default function Services() {
   return (
     <>
-      <head><link rel="canonical" href="https://vietnampay.net/services" /></head>
+      <head><link rel="canonical" href="https://vietnampay.net/services/" /></head>
       <ServiceJsonLd />
       <section className="page-header">
         <div className="container">

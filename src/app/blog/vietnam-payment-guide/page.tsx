@@ -38,7 +38,7 @@ function ArticleJsonLd() {
 export default function VietnamPaymentGuide() {
   return (
     <>
-    <head><link rel="canonical" href="https://vietnampay.net/blog/vietnam-payment-guide" /></head>
+    <head><link rel="canonical" href="https://vietnampay.net/blog/vietnam-payment-guide/" /></head>
     <article className="article">
       <ArticleJsonLd />
       <div className="breadcrumb">

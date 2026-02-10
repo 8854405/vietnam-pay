@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <head><link rel="canonical" href="https://vietnampay.net" /></head>
+      <head><link rel="canonical" href="https://vietnampay.net/" /></head>
       {/* Hero */}
       <section className="hero">
         <div className="container">

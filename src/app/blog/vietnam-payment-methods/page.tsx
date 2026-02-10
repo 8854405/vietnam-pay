@@ -47,7 +47,7 @@ const methods = [
 export default function VietnamPaymentMethods() {
   return (
     <>
-    <head><link rel="canonical" href="https://vietnampay.net/blog/vietnam-payment-methods" /></head>
+    <head><link rel="canonical" href="https://vietnampay.net/blog/vietnam-payment-methods/" /></head>
     <article className="article">
       <ArticleJsonLd />
       <div className="breadcrumb">

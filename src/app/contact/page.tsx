@@ -44,7 +44,7 @@ function ContactJsonLd() {
 export default function Contact() {
   return (
     <>
-      <head><link rel="canonical" href="https://vietnampay.net/contact" /></head>
+      <head><link rel="canonical" href="https://vietnampay.net/contact/" /></head>
       <ContactJsonLd />
       <section className="page-header">
         <div className="container">

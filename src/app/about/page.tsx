@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '关于我们 - 深耕越南支付领域的专业团队',
   description: '了解VietnamPay越南支付团队，深耕越南跨境支付领域多年，为超过1000家企业提供专业的越南支付解决方案，助力企业出海东南亚。',
-  alternates: { canonical: '/about' },
   openGraph: {
     title: '关于我们 - 深耕越南支付领域的专业团队 | VietnamPay',
     description: '了解VietnamPay越南支付团队，深耕越南跨境支付领域多年，为企业提供专业越南支付解决方案。',
@@ -40,6 +39,7 @@ function AboutJsonLd() {
 export default function About() {
   return (
     <>
+      <head><link rel="canonical" href="https://vietnampay.net/about" /></head>
       <AboutJsonLd />
       <section className="page-header">
         <div className="container">

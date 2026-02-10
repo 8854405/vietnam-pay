@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '越南主流支付方式介绍 - MoMo·ZaloPay·VNPay',
   description: '详细介绍越南主流支付方式：MoMo、ZaloPay、VNPay、银行转账等。帮助企业了解越南支付生态，选择最合适的越南支付渠道接入方案。',
-  alternates: { canonical: '/blog/vietnam-payment-methods' },
   openGraph: {
     title: '越南主流支付方式介绍 - MoMo·ZaloPay·VNPay | VietnamPay',
     description: '详细介绍越南主流支付方式，帮助企业选择最合适的越南支付渠道。',
@@ -47,6 +46,8 @@ const methods = [
 
 export default function VietnamPaymentMethods() {
   return (
+    <>
+    <head><link rel="canonical" href="https://vietnampay.net/blog/vietnam-payment-methods" /></head>
     <article className="article">
       <ArticleJsonLd />
       <div className="breadcrumb">
@@ -82,5 +83,6 @@ export default function VietnamPaymentMethods() {
       <p><a href="https://t.me/zfxt5" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb', fontWeight: 600 }}>Telegram: @zfxt5</a></p>
       <p style={{ marginTop: 24 }}>相关阅读：<a href="/blog/vietnam-payment-guide" style={{ color: '#2563eb' }}>越南支付方式全攻略</a> | <a href="/services" style={{ color: '#2563eb' }}>VietnamPay越南支付服务</a></p>
     </article>
+    </>
   )
 }

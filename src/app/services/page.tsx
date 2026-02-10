@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '越南支付服务 - 本地支付·跨境汇款·代收代付',
   description: 'VietnamPay越南支付服务详情：越南本地支付、跨境汇款、代收代付、电商支付、游戏支付等全场景越南支付解决方案，一次对接覆盖全渠道。',
-  alternates: { canonical: '/services' },
   openGraph: {
     title: '越南支付服务 - 本地支付·跨境汇款·代收代付 | VietnamPay',
     description: 'VietnamPay提供越南本地支付、跨境汇款、代收代付、电商支付等全场景越南支付解决方案。',
@@ -46,6 +45,7 @@ const services = [
 export default function Services() {
   return (
     <>
+      <head><link rel="canonical" href="https://vietnampay.net/services" /></head>
       <ServiceJsonLd />
       <section className="page-header">
         <div className="container">

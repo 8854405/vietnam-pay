@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '联系我们 - 获取越南支付解决方案',
   description: '联系VietnamPay越南支付团队，获取专业的越南跨境支付解决方案。Telegram: @zfxt5，7×24小时在线，中越双语支持。',
-  alternates: { canonical: '/contact' },
   openGraph: {
     title: '联系我们 - 获取越南支付解决方案 | VietnamPay',
     description: '联系VietnamPay越南支付团队，获取专业的越南跨境支付解决方案。Telegram: @zfxt5。',
@@ -45,6 +44,7 @@ function ContactJsonLd() {
 export default function Contact() {
   return (
     <>
+      <head><link rel="canonical" href="https://vietnampay.net/contact" /></head>
       <ContactJsonLd />
       <section className="page-header">
         <div className="container">

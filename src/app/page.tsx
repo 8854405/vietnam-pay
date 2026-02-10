@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '越南支付 - 专业越南跨境支付解决方案',
   description: 'VietnamPay越南支付专业平台，提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。安全快捷，助力企业出海东南亚。',
-  alternates: { canonical: '/' },
   openGraph: {
     title: '越南支付 - 专业越南跨境支付解决方案 | VietnamPay',
     description: 'VietnamPay提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。',
@@ -23,6 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <head><link rel="canonical" href="https://vietnampay.net" /></head>
       {/* Hero */}
       <section className="hero">
         <div className="container">

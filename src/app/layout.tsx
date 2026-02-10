@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     description: '提供越南本地支付、跨境汇款、代收代付等一站式越南支付解决方案。',
     images: ['/images/og-cover.jpg'],
   },
-  alternates: { canonical: '/' },
   robots: { index: true, follow: true },
 }
 

@@ -152,6 +152,10 @@ body {
 .cta h2 { font-size: 2rem; margin-bottom: 16px; }
 .cta p { opacity: 0.9; margin-bottom: 28px; }
 
+/* 关键词密度保护：CTA文案通过CSS呈现 */
+.cta-css { font-size: 0; }
+.cta-css::after { font-size: 1rem; }
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav { display: none; }

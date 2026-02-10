@@ -114,12 +114,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Payment System */}
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">越南支付系统搭建与出租</h2>
+          <p className="section-desc">需要一套完整的越南支付系统？我们提供定制搭建和SaaS出租两种灵活方案</p>
+          <div className="grid-3" style={{ maxWidth: 900, margin: '0 auto' }}>
+            <div className="card">
+              <div className="card-icon">🏗️</div>
+              <h3>系统搭建</h3>
+              <p>根据业务需求定制开发越南支付系统，私有化部署，完全自主可控。支持高并发架构、多渠道接入和企业级安全防护。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">☁️</div>
+              <h3>系统出租</h3>
+              <p>SaaS模式即开即用的越南支付系统，最快3天上线。按需付费，无需自建技术团队，大幅降低进入越南支付市场的门槛。</p>
+            </div>
+            <div className="card">
+              <div className="card-icon">🔌</div>
+              <h3>全渠道覆盖</h3>
+              <p>越南支付系统已对接40+本地银行、MoMo、ZaloPay、VNPay等主流支付渠道，一套系统覆盖越南全部支付方式。</p>
+            </div>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 32 }}>
+            <a href="/payment-system/" className="btn cta-css" aria-label="了解越南支付系统详情">了解越南支付系统详情 →</a>
+          </p>
+        </div>
+      </section>
+
       {/* Blog links */}
       <section className="section section-alt">
         <div className="container">
           <h2 className="section-title">越南支付知识中心</h2>
           <p className="section-desc">深入了解越南支付市场，掌握最新行业动态</p>
-          <div className="grid-3" style={{ maxWidth: 800, margin: '0 auto' }}>
+          <div className="grid-3">
             <a href="/blog/vietnam-payment-guide" className="card" style={{ textDecoration: 'none' }}>
               <h3>📖 越南支付方式全攻略</h3>
               <p>全面解析越南支付方式、政策法规与实操指南</p>
@@ -127,6 +155,10 @@ export default function Home() {
             <a href="/blog/vietnam-payment-methods" className="card" style={{ textDecoration: 'none' }}>
               <h3>💡 越南主流支付方式介绍</h3>
               <p>MoMo、ZaloPay、VNPay等越南主流支付方式详解</p>
+            </a>
+            <a href="/blog/vietnam-payment-system-guide/" className="card" style={{ textDecoration: 'none' }}>
+              <h3>🛠️ 越南支付系统搭建指南</h3>
+              <p>从零开始打造越南支付平台的完整技术指南</p>
             </a>
           </div>
         </div>

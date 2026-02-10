@@ -88,6 +88,7 @@ function Header() {
         <nav className="nav">
           <a href="/">首页</a>
           <a href="/services">服务</a>
+          <a href="/payment-system/">支付系统</a>
           <a href="/blog/vietnam-payment-guide">支付攻略</a>
           <a href="/blog/vietnam-payment-methods">支付方式</a>
           <a href="/about">关于</a>
@@ -110,8 +111,10 @@ function Footer() {
         <div className="footer-col">
           <h4>快速链接</h4>
           <a href="/services">支付服务</a>
+          <a href="/payment-system/">支付系统搭建与出租</a>
           <a href="/blog/vietnam-payment-guide">越南支付攻略</a>
           <a href="/blog/vietnam-payment-methods">支付方式介绍</a>
+          <a href="/blog/vietnam-payment-system-guide/">支付系统搭建指南</a>
           <a href="/about">关于我们</a>
           <a href="/contact">联系我们</a>
         </div>

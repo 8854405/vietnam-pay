@@ -71,6 +71,9 @@ export default function Services() {
           <h2>需要定制越南支付方案？</h2>
           <p>请联系我们的支付顾问，为您量身打造最合适的越南支付解决方案</p>
           <a href="https://t.me/zfxt5" className="btn" target="_blank" rel="noopener noreferrer">Telegram: @zfxt5</a>
+          <p style={{ marginTop: 20, opacity: 0.85, fontSize: '0.95rem' }}>
+            需要自建支付系统？了解我们的<a href="/payment-system/" style={{ color: '#fff', textDecoration: 'underline' }}>越南支付系统搭建与出租</a>服务
+          </p>
         </div>
       </section>
     </>

@@ -125,7 +125,7 @@ export default function VietnamPaymentGuide() {
       <h2>六、总结</h2>
       <p>越南支付市场正处于快速发展期，机遇与挑战并存。对于想要进入越南市场的企业来说，选择一个专业、可靠的越南支付服务伙伴至关重要。VietnamPay拥有多年越南支付行业经验，可以为您提供一站式的越南支付解决方案。</p>
       <p>如果您对越南支付有任何疑问，或需要了解更多关于越南支付接入的详细信息，欢迎通过 <a href="https://t.me/zfxt5" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb' }}>Telegram: @zfxt5</a> 联系我们的支付顾问。</p>
-      <p style={{ marginTop: 24 }}>相关阅读：<a href="/blog/vietnam-payment-methods" style={{ color: '#2563eb' }}>越南主流支付方式介绍</a> | <a href="/services" style={{ color: '#2563eb' }}>VietnamPay越南支付服务</a></p>
+      <p style={{ marginTop: 24 }}>相关阅读：<a href="/blog/vietnam-payment-methods" style={{ color: '#2563eb' }}>越南主流支付方式介绍</a> | <a href="/services" style={{ color: '#2563eb' }}>VietnamPay越南支付服务</a> | <a href="/payment-system/" style={{ color: '#2563eb' }}>越南支付系统搭建与出租</a></p>
     </article>
     </>
   )
